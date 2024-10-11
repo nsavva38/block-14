@@ -5,7 +5,7 @@ const getLength = (array) => {
 
 // get the sum of the array
 const getSum = (array) => {
-  sum = 0
+  let sum = 0
 
   for(i=0; i < array.length; i++){
     sum = sum + array[i];
@@ -16,14 +16,14 @@ const getSum = (array) => {
 
 // get the mean of the array
 const getMean = (array) => {
-  total = getSum(array);
+  let total = getSum(array);
   
   return total/array.length;
 }
 
 // get the minimum of the array
 const getMin = (array) => {
-  minimum = array[0];
+  let minimum = array[0];
 
   for(i=0; i < array.length; i++) {
     if (minimum > array[i]) {
@@ -36,7 +36,7 @@ const getMin = (array) => {
 
 // get the maximum of the array
 const getMax = (array) => {
-  maximum = array[0];
+  let maximum = array[0];
 
   for (i=0; i < array.length; i++) {
     if (maximum < array[i]) {
@@ -49,8 +49,8 @@ const getMax = (array) => {
 
 // get the range of the max and min
 const getRange = (array) => {
-  minimum = getMin(array);
-  maximum = getMax(array);
+  let minimum = getMin(array);
+  let maximum = getMax(array);
 
   return maximum - minimum;
 }
