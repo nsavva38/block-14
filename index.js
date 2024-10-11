@@ -90,8 +90,7 @@ for(i=0; i < stringArray.length; i++){
   numbArray.push(Number(stringArray[i]));
 }
 
-console.log(numbArray);
-console.log();
+console.log(`the array: ${numbArray}`);
 console.log(`length: ${getLength(numbArray)}`);
 console.log(`sum: ${getSum(numbArray)}`);
 console.log(`mean: ${getMean(numbArray)}`);
